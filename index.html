@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favico.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Noisettew Bakehouse</title>
+	</head>
+	<body>
+		<!-- ============================================ -->
+		<!--                 Navigation                   -->
+		<!-- ============================================ -->
+
+		<header id="cs-navigation">
+			<div class="cs-container">
+				<!--Nav Logo-->
+				<a href="/" class="cs-logo" aria-label="back to home">
+					<img
+						src="/noisette-logo.png"
+						alt="logo"
+						width="210"
+						height="29"
+						aria-hidden="true"
+						decoding="async"
+					/>
+				</a>
+				<!--Navigation List-->
+				<nav class="cs-nav" role="navigation">
+					<!--Mobile Nav Toggle-->
+					<button class="cs-toggle" aria-label="mobile menu toggle">
+						<div class="cs-box" aria-hidden="true">
+							<span class="cs-line cs-line1" aria-hidden="true"></span>
+							<span class="cs-line cs-line2" aria-hidden="true"></span>
+							<span class="cs-line cs-line3" aria-hidden="true"></span>
+						</div>
+					</button>
+					<!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+					<div class="cs-ul-wrapper">
+						<ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+							<li class="cs-li">
+								<a href="/" class="cs-li-link cs-active"> Home </a>
+							</li>
+							<li class="cs-li">
+								<a href="./menu.html" class="cs-li-link"> Menu </a>
+							</li>
+							<!-- <li class="cs-li">
+								<a href="" class="cs-li-link"> Services </a>
+							</li> -->
+							<!-- <li class="cs-li">
+								<a href="" class="cs-li-link"> Offers </a>
+							</li> -->
+							<!-- <li class="cs-li">
+								<a href="./location.html" class="cs-li-link"> Location </a>
+							</li> -->
+						</ul>
+					</div>
+				</nav>
+				<!-- telephone =>  -->
+				<a href="./contact-us.html" class="cs-button-solid cs-nav-button"
+					><span class="nav-button-content-container"
+						><div>Contact Us</div>
+						<svg
+							class="nav-cta-svg"
+							width="24"
+							height="24"
+							viewBox="0 0 256 256"
+							id="Flat"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M231.55566,175.0791A56.07032,56.07032,0,0,1,176,224C96.59766,224,32,159.40234,32,80A56.07029,56.07029,0,0,1,80.91992,24.44434a16.02839,16.02839,0,0,1,16.65235,9.583l20.09179,46.87793a15.96924,15.96924,0,0,1-1.32031,15.06641L99.709,121.38965l-.00195.00195a76.54083,76.54083,0,0,0,35.20508,35.04981l25.043-16.69336a15.95139,15.95139,0,0,1,15.17871-1.39453l46.83789,20.07324A16.03476,16.03476,0,0,1,231.55566,175.0791ZM157.35156,47.72852a72.12078,72.12078,0,0,1,50.91992,50.91992,7.99975,7.99975,0,0,0,15.457-4.13086,88.16381,88.16381,0,0,0-62.2461-62.2461,7.99975,7.99975,0,0,0-4.13086,15.457Zm-8.28418,30.917a40.06626,40.06626,0,0,1,28.28711,28.28711,7.99975,7.99975,0,0,0,15.457-4.13086,56.10589,56.10589,0,0,0-39.61328-39.61328,7.99975,7.99975,0,0,0-4.13086,15.457Z"
+							/></svg></span
+				></a>
+				<!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+				<!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+			</div>
+		</header>
+
+		<!-- ============================================ -->
+		<!--             Side By Side Reverse             -->
+		<!-- ============================================ -->
+
+		<section id="sbsr-1810">
+			<div class="cs-container">
+				<div class="cs-image-group">
+					<!--Main Image-->
+					<picture class="cs-picture">
+						<!--Mobile Image-->
+						<source media="(max-width: 600px)" srcset="/yummy-pastry.png" />
+						<!--Tablet and above Image-->
+						<source media="(min-width: 601px)" srcset="/yummy-pastry.png" />
+						<img
+							loading="lazy"
+							decoding="async"
+							src="/yummy-pastry.png"
+							alt="body builder"
+							width="562"
+							height="568"
+						/>
+					</picture>
+					<!--Pink Blob-->
+					<img
+						class="cs-splatter"
+						loading="lazy"
+						decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/flipped-red.svg"
+						alt="red splatter"
+						width="441"
+						height="478"
+					/>
+				</div>
+				<div class="cs-content">
+					<!-- <span class="cs-topper">About Us</span> -->
+					<h2 class="cs-title">Dive into Delights Of Delectable Pastry</h2>
+					<p class="cs-text">
+						Come and visit us to indulge in the authentic French bakery
+						experience
+					</p>
+					<div class="buttons-container">
+						<a href="" class="cs-button-solid" aria-label="learn more about us"
+							>Order Now</a
+						>
+						<a href="" class="cs-button-6" aria-label="read more about us">
+							Watch Video
+							<!-- SVG Arrow -->
+							<svg
+								class="cs-icon"
+								aria-hidden="true"
+								width="24px"
+								height="24px"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM14.66 13.73L13.38 14.47L12.1 15.21C10.45 16.16 9.1 15.38 9.1 13.48V12V10.52C9.1 8.61 10.45 7.84 12.1 8.79L13.38 9.53L14.66 10.27C16.31 11.22 16.31 12.78 14.66 13.73Z"
+									fill="#292D32"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!--White Splash Graphic-->
+			<img
+				class="cs-graphic cs-light"
+				src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/f7-splatter.svg"
+				alt="graphic"
+				height="161"
+				width="1920"
+				loading="lazy"
+				decoding="async"
+			/>
+			<!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+			<img
+				class="cs-graphic cs-dark"
+				src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg"
+				alt="graphic"
+				height="161"
+				width="1920"
+				loading="lazy"
+				decoding="async"
+			/>
+		</section>
+		<!-- ============================================ -->
+		<!--                    Blog                      -->
+		<!-- ============================================ -->
+
+		<section id="blog-1540">
+			<div class="cs-container">
+				<div class="cs-content">
+					<span class="cs-topper">Customer Favorites</span>
+					<h2 class="cs-title">Popular Items</h2>
+					<p class="cs-text">
+						Our goal is to make your day extraordinary by offering a variety of
+						freshly baked treats made with high-quality ingredients . Our
+						passion for baking and attention to detail ensure that each of our
+						pastries and breads is a work of art
+					</p>
+				</div>
+				<ul class="cs-card-group">
+					<li class="cs-item">
+						<a href="" class="cs-link">
+							<div class="cs-picture-group">
+								<picture class="cs-picture" aria-hidden="true">
+									<source
+										media="(max-width: 600px)"
+										srcset="/pistachio-croissant.jpeg"
+									/>
+									<source
+										media="(min-width: 601px)"
+										srcset="/pistachio-croissant.jpeg"
+									/>
+									<img
+										loading="lazy"
+										decoding="async"
+										src="/pistachio-croissant.jpeg"
+										width="365"
+										height="201"
+									/>
+								</picture>
+								<svg
+									class="cs-mask"
+									width="369"
+									height="249"
+									viewBox="0 0 369 249"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									preserveAspectRatio="none"
+								>
+									<g clip-path="url(#clip0_3335_6487)">
+										<path
+											d="M369 249V105.57H364.72L360.02 177.28L350.1 221.22L338.48 233.69L294.54 231.71L227.65 231.14L159.67 232.48L102.92 238.23L43.73 243.79L31 238.99L24.33 229L8.32 177.28L5.69 111.52L0 110.67V249H369Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											d="M0 0H369V114.64L364.64 113.67L364.72 77.5L356.91 50.01L348.69 27.11L329.08 10.47L296.81 4.93L28.9 9.69L21.28 14.57L15.61 25.63L4 124.51H0V0Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M366 4H4V245H366V4ZM31 239C-4.86 193.71 3.34 85.57 14 31C17.78 11.59 25.37 8.61 42 8C107.73 5.59 193.2 4.66 300 5C325.79 5.1 347.16 14.21 356 43C370.28 89.64 364.08 137.32 358.09 183.32L358 184C356.03 199.42 352.41 212.38 347 224C343.96 230.49 339.5 233.58 333 233C234.49 224.39 139.41 232.28 42 244C39.88 244.27 37.99 243.86 36 243C34.01 242.14 32.41 240.79 31 239Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											d="M13.9996 30.9899C9.37956 54.6199 5.22956 88.2999 4.90956 122.57C4.49956 167.43 10.6696 213.31 30.9996 238.99C32.4096 240.78 34.0096 242.13 35.9996 242.99C37.9896 243.85 39.8796 244.26 41.9996 243.99C139.42 232.27 234.49 224.38 333 232.99C339.5 233.57 343.96 230.48 347 223.99C352.41 212.37 356.02 199.41 358 183.99C364.01 137.78 370.35 89.8599 356 42.9899C347.16 14.1999 325.79 5.08989 300 4.98989C193.2 4.64989 107.73 5.57989 41.9996 7.98989C25.3696 8.59989 17.7796 11.5799 13.9996 30.9899Z"
+											stroke="var(--maskBorder)"
+											stroke-width="8"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_3335_6487-1516-1540">
+											<rect width="369" height="249" fill="var(--maskBG)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="cs-info">
+								<div class="cs-flex">
+									<span class="cs-tag">Sweet</span>
+									<span class="cs-date">
+										<svg
+											class="cs-icon cs-icon-color"
+											loading="lazy"
+											decoding="async"
+											alt="icon"
+											aria-hidden="true"
+											width="24px"
+											height="24px"
+											viewBox="0 0 50 50"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+										>
+											<path
+												d="M35.777344 19.71875L30.28125 14.222656C29.910156 13.847656 29.3125 13.828125 28.914063 14.175781L5.148438 35.050781C4.855469 35.308594 4.738281 35.71875 4.851563 36.089844 4.882813 36.195313 5.644531 38.652344 8.496094 41.503906 11.347656 44.355469 13.804688 45.117188 13.90625 45.148438 14.003906 45.179688 14.101563 45.191406 14.195313 45.191406 14.480469 45.191406 14.753906 45.070313 14.945313 44.851563L35.824219 21.085938C36.171875 20.6875 36.152344 20.089844 35.777344 19.71875zM26.828125 13.347656L4.929688 32.582031C1.863281 28.121094 1.066406 25.09375 1.03125 24.945313.925781 24.523438 1.101563 24.085938 1.46875 23.855469L22.867188 10.484375C23.265625 10.238281 23.777344 10.296875 24.105469 10.625zM39.375 25.894531L36.652344 23.171875 17.417969 45.070313C21.875 48.136719 24.90625 48.933594 25.054688 48.96875 25.136719 48.988281 25.21875 49 25.296875 49 25.636719 49 25.960938 48.828125 26.144531 48.53125L39.515625 27.128906C39.761719 26.734375 39.703125 26.222656 39.375 25.894531zM19.160156 7.929688L20.707031 9.476563 2.5 20.851563C1.125 15.980469 1.425781 12.664063 1.441406 12.503906 1.484375 12.082031 1.785156 11.730469 2.195313 11.632813L18.214844 7.667969C18.550781 7.582031 18.914063 7.683594 19.160156 7.929688zM42.070313 30.839844L40.519531 29.289063 29.152344 47.488281C32.460938 48.421875 35.066406 48.597656 36.429688 48.597656 37.074219 48.597656 37.445313 48.5625 37.496094 48.558594 37.917969 48.515625 38.265625 48.214844 38.367188 47.804688L42.332031 31.785156C42.417969 31.445313 42.316406 31.089844 42.070313 30.839844zM15.992188 6.15625L4.113281 9.097656C4.242188 5.601563 4.964844 0 9.074219 0 10.777344 0 12.757813 2.117188 15.992188 6.15625zM44.101563 32.972656L40.921875 45.808594C46.636719 45.21875 50 42.03125 50 38.925781 50 37.132813 47.800781 35.460938 44.101563 32.972656z"
+											/>
+										</svg>
+										Croissants
+									</span>
+								</div>
+								<h3 class="cs-h3">Pistacio Croissant</h3>
+								<p class="cs-item-text">
+									<span>
+										Blend of flaky pastry filled with creamy pistachio and
+										finished with pistachio glaze.
+									</span>
+									<picture class="cs-wrapper">
+										<img
+											class="cs-arrow"
+											loading="lazy"
+											decoding="async"
+											src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-right-chevron.svg"
+											alt="icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										/>
+									</picture>
+								</p>
+								<!-- <div class="cs-bottom"> -->
+								<!-- <div class="cs-author-group"> -->
+								<!-- <picture class="cs-profile">
+											<img
+												src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png"
+												decoding="async"
+												alt="profile"
+												width="50"
+												height="50"
+												aria-hidden="true"
+											/>
+										</picture> -->
+								<!-- <span class="cs-name">
+											Jenny Wilson
+											<span class="cs-job">Parent</span>
+										</span> -->
+								<!-- </div> -->
+
+								<!-- </div> -->
+							</div>
+						</a>
+					</li>
+					<li class="cs-item">
+						<a href="" class="cs-link">
+							<div class="cs-picture-group">
+								<picture class="cs-picture" aria-hidden="true">
+									<source
+										media="(max-width: 600px)"
+										srcset="/cafe-au-preline=tart.jpg"
+									/>
+									<source
+										media="(min-width: 601px)"
+										srcset="/cafe-au-preline=tart.jpg"
+									/>
+									<img
+										loading="lazy"
+										decoding="async"
+										src="/cafe-au-preline=tart.jpg"
+										width="365"
+										height="201"
+									/>
+								</picture>
+								<svg
+									class="cs-mask"
+									width="369"
+									height="249"
+									viewBox="0 0 369 249"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									preserveAspectRatio="none"
+								>
+									<g clip-path="url(#clip0_3335_6487)">
+										<path
+											d="M369 249V105.57H364.72L360.02 177.28L350.1 221.22L338.48 233.69L294.54 231.71L227.65 231.14L159.67 232.48L102.92 238.23L43.73 243.79L31 238.99L24.33 229L8.32 177.28L5.69 111.52L0 110.67V249H369Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											d="M0 0H369V114.64L364.64 113.67L364.72 77.5L356.91 50.01L348.69 27.11L329.08 10.47L296.81 4.93L28.9 9.69L21.28 14.57L15.61 25.63L4 124.51H0V0Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M366 4H4V245H366V4ZM31 239C-4.86 193.71 3.34 85.57 14 31C17.78 11.59 25.37 8.61 42 8C107.73 5.59 193.2 4.66 300 5C325.79 5.1 347.16 14.21 356 43C370.28 89.64 364.08 137.32 358.09 183.32L358 184C356.03 199.42 352.41 212.38 347 224C343.96 230.49 339.5 233.58 333 233C234.49 224.39 139.41 232.28 42 244C39.88 244.27 37.99 243.86 36 243C34.01 242.14 32.41 240.79 31 239Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											d="M13.9996 30.9899C9.37956 54.6199 5.22956 88.2999 4.90956 122.57C4.49956 167.43 10.6696 213.31 30.9996 238.99C32.4096 240.78 34.0096 242.13 35.9996 242.99C37.9896 243.85 39.8796 244.26 41.9996 243.99C139.42 232.27 234.49 224.38 333 232.99C339.5 233.57 343.96 230.48 347 223.99C352.41 212.37 356.02 199.41 358 183.99C364.01 137.78 370.35 89.8599 356 42.9899C347.16 14.1999 325.79 5.08989 300 4.98989C193.2 4.64989 107.73 5.57989 41.9996 7.98989C25.3696 8.59989 17.7796 11.5799 13.9996 30.9899Z"
+											stroke="var(--maskBorder)"
+											stroke-width="8"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_3335_6487-1516-1540">
+											<rect width="369" height="249" fill="var(--maskBG)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="cs-info">
+								<div class="cs-flex">
+									<span class="cs-tag">Pastry</span>
+									<span class="cs-date">
+										<svg
+											class="cs-icon cs-icon-color"
+											loading="lazy"
+											decoding="async"
+											alt="icon"
+											aria-hidden="true"
+											width="24px"
+											height="24px"
+											viewBox="0 0 297 297"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="0 0 297 297"
+											xml:space="preserve"
+										>
+											<g>
+												<path
+													d="M112.852,78.557c22.965,0,43.608,6.259,58.603,16.508l12.286-11.864c13.492-13.031,13.868-34.611,0.839-48.105   c-6.313-6.536-14.794-10.223-23.88-10.382c-9.053-0.129-17.688,3.23-24.224,9.543c-0.058,0.055-0.116,0.109-0.176,0.163   c-1.111,1.025-3.351,3.584-4.64,6.551c12.097,0.656,23.328,5.769,31.789,14.53c2.654,2.749,2.578,7.128-0.171,9.782   c-2.749,2.655-7.13,2.577-9.782-0.171c-6.313-6.536-14.793-10.224-23.878-10.382c-9.089-0.194-17.688,3.229-24.226,9.542   c-4.41,4.26-7.543,9.581-9.149,15.396c4.317-0.578,8.717-0.942,13.179-1.063C110.567,78.573,111.717,78.557,112.852,78.557z"
+												/>
+												<path
+													d="M287.116,146.79H9.884c-5.458,0-9.884,4.426-9.884,9.884v53.865c0,5.458,4.426,9.884,9.884,9.884   c13.577,0,20.704-3.048,26.991-5.738c5.415-2.316,9.69-4.145,19.218-4.145c9.527,0,13.805,1.829,19.219,4.145   c6.287,2.69,13.414,5.738,26.992,5.738c13.576,0,20.702-3.049,26.989-5.738c5.413-2.316,9.688-4.145,19.214-4.145   c9.526,0,13.802,1.829,19.215,4.145c6.287,2.689,13.413,5.738,26.989,5.738c13.577,0,20.703-3.049,26.99-5.738   c5.412-2.316,9.688-4.145,19.214-4.145c9.524,0,13.8,1.829,19.213,4.145c6.287,2.689,13.412,5.738,26.988,5.738   c5.458,0,9.884-4.426,9.884-9.884v-53.865C297,151.216,292.574,146.79,287.116,146.79z"
+												/>
+												<path
+													d="M240.915,224.376c-6.69,0-8.91,0.95-13.777,3.033c-6.76,2.892-16.019,6.851-32.427,6.851s-25.666-3.959-32.434-6.854   c-4.86-2.08-7.079-3.03-13.77-3.03c-6.69,0-8.91,0.95-13.777,3.033c-6.76,2.892-16.018,6.851-32.426,6.851   c-16.416,0-25.675-3.961-32.435-6.853c-4.863-2.081-7.083-3.031-13.776-3.031c-6.692,0-8.911,0.95-13.775,3.03   c-4.674,1.999-10.545,4.508-19.148,5.868l9.886,32.045c1.278,4.145,5.108,6.971,9.444,6.971h212.002   c4.336,0,8.166-2.826,9.444-6.971l9.886-32.046c-8.598-1.359-14.469-3.866-19.148-5.867   C249.823,225.327,247.604,224.376,240.915,224.376z"
+												/>
+												<path
+													d="M91.189,113.335c-0.308-9.936,8.179-17.881,18.666-18.247c10.487-0.366,19.347,7.27,19.655,17.206   c0.116,3.756,3.178,6.73,6.912,6.73c0.063,0,0.127,0,0.19-0.002c3.819-0.104,6.832-3.284,6.729-7.104   c-0.166-6.135-1.61-11.591-4.19-16.203c23.583,6.195,40.82,20.43,42.964,37.238H40.318c1.913-9.154,8.253-17.853,18.381-25.009   c6.376-4.505,13.834-8.102,21.996-10.704c-2.347,4.76-3.505,10.307-3.337,16.471c0.101,3.756,3.178,6.731,6.911,6.731   c0.064,0,0.128-0.002,0.192-0.004C88.281,120.336,91.308,117.155,91.189,113.335z"
+												/>
+												<path
+													d="M224.202,115.22c-2.703,2.701-7.083,2.701-9.785,0c-6.426-6.426-14.969-9.964-24.056-9.964   c-2.21,0-4.384,0.221-6.507,0.632c7.001,7.91,11.337,17.121,12.176,27.066h48.766l41.746-41.748   c13.265-13.264,13.264-34.848-0.001-48.111c-6.425-6.426-14.968-9.965-24.056-9.965c-9.087,0-17.63,3.539-24.054,9.964   c-0.058,0.057-0.114,0.112-0.173,0.167c-1.097,1.047-3.298,3.652-4.532,6.65c11.65,0.434,23.172,5.076,32.047,13.951   c2.701,2.703,2.701,7.083,0,9.785c-2.703,2.701-7.083,2.701-9.785,0c-13.263-13.265-34.847-13.265-48.11,0.001   c-5.043,5.042-8.335,11.491-9.493,18.45c9.731,1.634,18.699,6.219,25.817,13.336C226.903,108.138,226.903,112.518,224.202,115.22z"
+												/>
+											</g>
+										</svg>
+
+										Tarts
+									</span>
+								</div>
+								<h3 class="cs-h3">Café Au Praliné Tart</h3>
+								<p class="cs-item-text">
+									<span
+										>Tangy lemon curd nestled in a buttery pastry crust, crowned
+										with fluffy meringue peaks.</span
+									>
+									<picture class="cs-wrapper">
+										<img
+											class="cs-arrow"
+											loading="lazy"
+											decoding="async"
+											src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-right-chevron.svg"
+											alt="icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										/>
+									</picture>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="cs-item">
+						<a href="" class="cs-link">
+							<div class="cs-picture-group">
+								<picture class="cs-picture" aria-hidden="true">
+									<source
+										media="(max-width: 600px)"
+										srcset="/sour-dough-bread.jpg"
+									/>
+									<source
+										media="(min-width: 601px)"
+										srcset="/sour-dough-bread.jpg"
+									/>
+									<img
+										loading="lazy"
+										decoding="async"
+										src="/sour-dough-bread.jpg"
+										width="365"
+										height="201"
+									/>
+								</picture>
+								<svg
+									class="cs-mask"
+									width="369"
+									height="249"
+									viewBox="0 0 369 249"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									preserveAspectRatio="none"
+								>
+									<g clip-path="url(#clip0_3335_6487)">
+										<path
+											d="M369 249V105.57H364.72L360.02 177.28L350.1 221.22L338.48 233.69L294.54 231.71L227.65 231.14L159.67 232.48L102.92 238.23L43.73 243.79L31 238.99L24.33 229L8.32 177.28L5.69 111.52L0 110.67V249H369Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											d="M0 0H369V114.64L364.64 113.67L364.72 77.5L356.91 50.01L348.69 27.11L329.08 10.47L296.81 4.93L28.9 9.69L21.28 14.57L15.61 25.63L4 124.51H0V0Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M366 4H4V245H366V4ZM31 239C-4.86 193.71 3.34 85.57 14 31C17.78 11.59 25.37 8.61 42 8C107.73 5.59 193.2 4.66 300 5C325.79 5.1 347.16 14.21 356 43C370.28 89.64 364.08 137.32 358.09 183.32L358 184C356.03 199.42 352.41 212.38 347 224C343.96 230.49 339.5 233.58 333 233C234.49 224.39 139.41 232.28 42 244C39.88 244.27 37.99 243.86 36 243C34.01 242.14 32.41 240.79 31 239Z"
+											fill="var(--maskBG)"
+										/>
+										<path
+											d="M13.9996 30.9899C9.37956 54.6199 5.22956 88.2999 4.90956 122.57C4.49956 167.43 10.6696 213.31 30.9996 238.99C32.4096 240.78 34.0096 242.13 35.9996 242.99C37.9896 243.85 39.8796 244.26 41.9996 243.99C139.42 232.27 234.49 224.38 333 232.99C339.5 233.57 343.96 230.48 347 223.99C352.41 212.37 356.02 199.41 358 183.99C364.01 137.78 370.35 89.8599 356 42.9899C347.16 14.1999 325.79 5.08989 300 4.98989C193.2 4.64989 107.73 5.57989 41.9996 7.98989C25.3696 8.59989 17.7796 11.5799 13.9996 30.9899Z"
+											stroke="var(--maskBorder)"
+											stroke-width="8"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_3335_6487-1516-1540">
+											<rect width="369" height="249" fill="var(--maskBG)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="cs-info">
+								<div class="cs-flex">
+									<span class="cs-tag">Bread</span>
+									<span class="cs-date">
+										<svg
+											class="cs-icon cs-icon-color"
+											loading="lazy"
+											decoding="async"
+											alt="icon"
+											aria-hidden="true"
+											width="24px"
+											height="24px"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="0 0 512 512"
+											version="1.1"
+											xml:space="preserve"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												<g>
+													<path
+														class="st0"
+														d="M482.01,226.209c-20.105-18.897-48.03-35.352-80.138-48.1c-7.233-2.873-7.326-2.633-7.326-2.633 c-3.052-1.1-6.458-0.472-8.921,1.65c-2.447,2.114-3.578,5.398-2.927,8.58c0,0,0.278-0.139,1.332,6.684 c3.376,21.584,2.866,36.855,2.85,44.313c-0.015,17.417-11.926,22.536-13.956,6.931c-4.212-29.924-25.416-77.69-25.416-77.69 c-1.038-3.199-3.78-5.546-7.11-6.079c0,0-12.855-5.182-37.466-7.024c-26.439-1.983-41.169-1.378-42.795,1.03 s-1.998,5.452-0.976,8.178c0,0,6.443,14.815,9.743,26.13c7.496,25.711,8.611,44.15,9.385,52.552 c1.596,17.339-13.025,21.15-16.324,7.938c-6.01-25.246-15.056-48.913-26.285-69.73c-5.173-9.595-13.692-21.847-13.692-21.847 c-1.905-3.036-5.421-4.646-8.968-4.112c0,0-23.016,2.718-37.111,5.614c-15.644,3.206-33.378,8.898-33.378,8.898 c-2.803,0.751-5.08,2.803-6.102,5.522c-1.022,2.726-0.666,5.769,0.96,8.178c0,0,10.501,13.979,16.557,24.642 c13.335,23.519,18.694,41.378,21.374,49.424c5.514,16.526-8.271,22.04-11.028,11.012c-11.554-23.108-27.104-43.794-43.616-61.319 c-7.465-7.93-18.137-17.401-18.137-17.401c-2.726-2.626-6.83-3.253-10.222-1.564c0,0-11.725,5.335-19.748,9.82 c-16.387,9.13-30.822,19.353-42.578,30.404C-17.59,270.925-9.66,360.348,61.711,360.348c71.371,0,194.289,0,194.289,0 s122.918,0,194.289,0C521.66,360.348,529.59,270.925,482.01,226.209z"
+													></path>
+												</g>
+											</g>
+										</svg>
+										Sourdough Crispy Loaf
+									</span>
+								</div>
+								<h3 class="cs-h3">Sourdough Loaf Bread</h3>
+								<p class="cs-item-text">
+									<span>
+										Artisanally crafted with our signature sourdough starter,
+										with a crisp crust and a tender, tangy crumb.
+									</span>
+									<picture class="cs-wrapper">
+										<img
+											class="cs-arrow"
+											loading="lazy"
+											decoding="async"
+											src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-right-chevron.svg"
+											alt="icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										/>
+									</picture>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--Zig zag SVGS at the top and bottom-->
+			<svg
+				class="cs-background cs-background-top"
+				xmlns="http://www.w3.org/2000/svg"
+				width="1920"
+				height="39"
+				viewBox="0 0 1920 39"
+				fill="none"
+			>
+				<path
+					d="M1920 0H0V15.8216L4.95532 13.3966L18.1455 15.2801L28.6394 22.5944L42.0481 24.423L54.0723 27.0599L66.8979 21.3623L78.7034 23.6147L90.9463 27.8134L102.533 21.5742L114.776 24.5329L126.654 25.2314L138.605 24.7997L148.881 29.1554L160.759 28.6217L171.18 33.354L183.569 27.1698L194.573 29.9637L207.69 30.0186L219.277 25.7179L228.531 18.9373L240.556 16.0335L253.017 13.3966L265.989 13.0748L279.033 14.5267L292.296 16.1983L305.413 12.5333L317.437 17.0537L331.065 15.0682L342.943 19.157L354.749 23.0261L366.773 26.1496L378.943 29.2652L391.331 31.6903L405.469 28.0802L417.274 32.067L428.57 35.1277L440.375 35.2925L451.598 38.4631L463.622 37.7097L475.208 38.8947L487.087 35.7241L498.455 36.7993L510.115 38.1413L522.285 34.2173L536.058 32.012L547.864 26.3065L561.928 29.2652L574.171 20.7658L587.434 22.0058L599.604 24.0463L611.191 21.5192L623.215 24.6428L634.947 25.2863L646.607 23.9443L658.413 20.499L670.437 17.7051L681.805 24.423L694.048 20.7658L706.072 20.1223L728.226 29.43L741.197 24.6428H753.221L761.31 35.6692L773.771 34.1624L785.65 29.8067L796.29 31.2586L809.261 34.594L818.37 26.7382L828.864 22.1628L842.418 22.9711L852.329 17.0537L866.248 19.314L875.722 11.7877L887.673 9.95128L900.28 11.2462L911.94 8.2875L924.474 10.328L937.373 8.17763L949.98 7.15739L961.931 10.3123L966.887 7.8951L980.077 15.1545L990.57 22.4689L1003.98 24.2974L1016 26.9344L1028.83 21.2367L1040.63 23.4891L1052.88 27.6878L1064.46 21.4486L1076.71 24.4073L1088.59 25.1058L1100.54 24.6741L1110.81 29.0298L1122.69 28.4961L1133.11 33.2285L1145.5 27.0442L1156.5 29.8381L1169.62 29.8931L1181.21 25.5924L1190.46 18.8117L1202.49 15.9079L1214.95 13.271L1227.92 12.9492L1240.96 14.4011L1254.23 16.0727L1267.34 12.4077L1279.37 16.9282L1293 14.9426L1304.87 19.0236L1316.68 22.9005L1328.7 26.024L1340.87 29.1397L1353.26 31.5647L1367.4 27.9546L1379.21 31.9414L1390.5 35.0021L1402.31 35.1669L1413.53 38.3375L1425.55 37.5841L1437.14 38.7692L1449.02 35.5986L1460.39 36.6738L1472.05 38.0158L1484.22 34.0918L1497.99 31.8865L1509.79 26.181L1523.86 29.1397L1536.1 20.6403L1549.37 21.8803L1561.54 23.9207L1573.12 21.3937L1585.15 24.5172L1596.88 25.1607L1608.54 23.8187L1620.34 20.3734L1632.37 17.5717L1643.74 24.2974L1655.98 20.6403L1668 19.9967L1690.16 29.3045L1703.13 24.5172H1715.15L1723.24 35.5436L1735.7 34.0368L1747.58 29.6812L1758.22 31.1331L1771.19 34.4685L1780.3 26.6126L1790.79 22.0372L1804.35 22.8456L1814.26 16.9282L1828.18 19.1884L1837.65 11.6543L1849.6 9.82571L1862.21 11.1206L1873.87 8.16193L1886.41 10.2024L1899.3 8.05206L1911.91 7.03182L1920 7.78523V0Z"
+					fill="var(--backgroundBG)"
+				/>
+			</svg>
+			<svg
+				class="cs-background cs-background-bottom"
+				xmlns="http://www.w3.org/2000/svg"
+				width="1920"
+				height="39"
+				viewBox="0 0 1920 39"
+				fill="none"
+			>
+				<path
+					d="M1920 0H0V15.8216L4.95532 13.3966L18.1455 15.2801L28.6394 22.5944L42.0481 24.423L54.0723 27.0599L66.8979 21.3623L78.7034 23.6147L90.9463 27.8134L102.533 21.5742L114.776 24.5329L126.654 25.2314L138.605 24.7997L148.881 29.1554L160.759 28.6217L171.18 33.354L183.569 27.1698L194.573 29.9637L207.69 30.0186L219.277 25.7179L228.531 18.9373L240.556 16.0335L253.017 13.3966L265.989 13.0748L279.033 14.5267L292.296 16.1983L305.413 12.5333L317.437 17.0537L331.065 15.0682L342.943 19.157L354.749 23.0261L366.773 26.1496L378.943 29.2652L391.331 31.6903L405.469 28.0802L417.274 32.067L428.57 35.1277L440.375 35.2925L451.598 38.4631L463.622 37.7097L475.208 38.8947L487.087 35.7241L498.455 36.7993L510.115 38.1413L522.285 34.2173L536.058 32.012L547.864 26.3065L561.928 29.2652L574.171 20.7658L587.434 22.0058L599.604 24.0463L611.191 21.5192L623.215 24.6428L634.947 25.2863L646.607 23.9443L658.413 20.499L670.437 17.7051L681.805 24.423L694.048 20.7658L706.072 20.1223L728.226 29.43L741.197 24.6428H753.221L761.31 35.6692L773.771 34.1624L785.65 29.8067L796.29 31.2586L809.261 34.594L818.37 26.7382L828.864 22.1628L842.418 22.9711L852.329 17.0537L866.248 19.314L875.722 11.7877L887.673 9.95128L900.28 11.2462L911.94 8.2875L924.474 10.328L937.373 8.17763L949.98 7.15739L961.931 10.3123L966.887 7.8951L980.077 15.1545L990.57 22.4689L1003.98 24.2974L1016 26.9344L1028.83 21.2367L1040.63 23.4891L1052.88 27.6878L1064.46 21.4486L1076.71 24.4073L1088.59 25.1058L1100.54 24.6741L1110.81 29.0298L1122.69 28.4961L1133.11 33.2285L1145.5 27.0442L1156.5 29.8381L1169.62 29.8931L1181.21 25.5924L1190.46 18.8117L1202.49 15.9079L1214.95 13.271L1227.92 12.9492L1240.96 14.4011L1254.23 16.0727L1267.34 12.4077L1279.37 16.9282L1293 14.9426L1304.87 19.0236L1316.68 22.9005L1328.7 26.024L1340.87 29.1397L1353.26 31.5647L1367.4 27.9546L1379.21 31.9414L1390.5 35.0021L1402.31 35.1669L1413.53 38.3375L1425.55 37.5841L1437.14 38.7692L1449.02 35.5986L1460.39 36.6738L1472.05 38.0158L1484.22 34.0918L1497.99 31.8865L1509.79 26.181L1523.86 29.1397L1536.1 20.6403L1549.37 21.8803L1561.54 23.9207L1573.12 21.3937L1585.15 24.5172L1596.88 25.1607L1608.54 23.8187L1620.34 20.3734L1632.37 17.5717L1643.74 24.2974L1655.98 20.6403L1668 19.9967L1690.16 29.3045L1703.13 24.5172H1715.15L1723.24 35.5436L1735.7 34.0368L1747.58 29.6812L1758.22 31.1331L1771.19 34.4685L1780.3 26.6126L1790.79 22.0372L1804.35 22.8456L1814.26 16.9282L1828.18 19.1884L1837.65 11.6543L1849.6 9.82571L1862.21 11.1206L1873.87 8.16193L1886.41 10.2024L1899.3 8.05206L1911.91 7.03182L1920 7.78523V0Z"
+					fill="var(--backgroundBG)"
+				/>
+			</svg>
+		</section>
+		<!-- Standout Breakfast -->
+		<section class="breakfast-hero-section" role="">
+			<h3 class="cs-topper breakfast-hero-section-title">
+				Standout Breakfast From Our Menu
+			</h3>
+			<p class="cs-title">Best served with a side of your choice</p>
+			<div class="product-grid">
+				<a class="product-card" href="#">
+					<div class="product-card__image-wrapper">
+						<img
+							src="/7ba22c_a733bfa462654c5da03a866a70adfaa3~mv2.png"
+							alt="Product"
+							class="product-card__image"
+						/>
+					</div>
+					<h3 class="product-card__title">French Breakfast</h3>
+					<p class="product-card__description">
+						Two eggs your way with two sausages, herbed baby potatoes &
+						mushrooms, mixed leaf salad & toasted sourdough bread.
+					</p>
+					<div class="product-card__price">
+						<span class="product-card__price-symbol">$</span>6.00
+					</div>
+					<div class="product-card__corner">
+						<div class="product-card__icon">
+							<svg
+								class="product-card__like product-card__like--selected"
+								width="24px"
+								height="24px"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								stroke="#000000"
+							>
+								<path
+									d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z"
+									stroke="#000000"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</svg>
+						</div>
+					</div>
+				</a>
+				<a class="product-card" href="#">
+					<div class="product-card__image-wrapper">
+						<img
+							src="/7ba22c_96597c91713747dcb185e8e5b2c2ab54~mv2.png"
+							alt="Product"
+							class="product-card__image"
+						/>
+					</div>
+					<h4 class="product-card__title">Mushroom Spinach</h4>
+					<p class="product-card__description">
+						A fluffy omelette filled with sautéed mushrooms & fresh spinach with
+						a mixed leaf side salad, drizzled with French dressing.
+					</p>
+					<div class="product-card__price">
+						<span class="product-card__price-symbol">$</span>10.00
+					</div>
+					<div class="product-card__corner">
+						<div class="product-card__icon">
+							<svg
+								class="product-card__like"
+								width="24px"
+								height="24px"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								stroke="#000000"
+							>
+								<path
+									d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z"
+									stroke="#000000"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</svg>
+						</div>
+					</div>
+				</a>
+				<a class="product-card" href="#">
+					<div class="product-card__image-wrapper">
+						<img
+							src="/7ba22c_86b7aceacc2d44a5b50643470bd71252~mv2.png"
+							alt="Product"
+							class="product-card__image"
+						/>
+					</div>
+					<h3 class="product-card__title">Chicken Caesar Salad</h3>
+					<p class="product-card__description">
+						Lettuce, grilled tenders, parmesan, croutons, with caesar dressing.
+					</p>
+					<div class="product-card__price">
+						<span class="product-card__price-symbol">$</span>12.00
+					</div>
+					<div class="product-card__corner">
+						<div class="product-card__icon">
+							<svg
+								class="product-card__like product-card__like--selected"
+								width="24px"
+								height="24px"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								stroke="#000000"
+							>
+								<path
+									d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z"
+									stroke="#000000"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</svg>
+						</div>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<!-- ============================================ -->
+		<!--                  Side By Side                -->
+		<!-- ============================================ -->
+
+		<section id="RPsbs">
+			<div class="cs-container">
+				<picture class="cs-picture">
+					<!--Mobile Image-->
+					<source media="(max-width: 600px)" srcset="/3d-cakes.webp" />
+					<!--Tablet and above Image-->
+					<source media="(min-width: 601px)" srcset="/3d-cakes.webp" />
+					<img
+						loading="lazy"
+						decoding="async"
+						src="/3d-cakes.webp"
+						alt="models"
+						width="586"
+						height="690"
+					/>
+				</picture>
+				<div class="cs-content">
+					<span class="cs-topper">Specials</span>
+					<h2 class="cs-title">3D Cakes & Special Events</h2>
+					<ul class="cs-card-group">
+						<li class="cs-item">
+							<div class="wrapper">
+								<span class="cs-item-number">01</span>
+								<h3 class="cs-h3">Custom Designs</h3>
+							</div>
+							<p class="cs-item-text">
+								Craft your dream cake with our custom 3D designs, perfect for
+								any special occasion.
+							</p>
+						</li>
+						<li class="cs-item">
+							<div class="wrapper">
+								<span class="cs-item-number">02</span>
+								<h3 class="cs-h3">Event Catering</h3>
+							</div>
+							<p class="cs-item-text">
+								Elevate your events with our exquisite pastries and desserts,
+								tailored to your needs.
+							</p>
+						</li>
+						<li class="cs-item">
+							<div class="wrapper">
+								<span class="cs-item-number">03</span>
+								<h3 class="cs-h3">Seasonal Specials</h3>
+							</div>
+							<p class="cs-item-text">
+								Indulge in our seasonal creations, crafted with the finest
+								ingredients and a touch of creativity.
+							</p>
+						</li>
+						<li class="cs-item">
+							<div class="wrapper">
+								<span class="cs-item-number">04</span>
+								<h3 class="cs-h3">Gift Options</h3>
+							</div>
+							<p class="cs-item-text">
+								Surprise your loved ones with beautifully packaged pastries,
+								perfect for any celebration.
+							</p>
+						</li>
+					</ul>
+					<a href="" class="cs-button-solid">View All Collections</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============================================ -->
+		<!--              Side By Side Reverse            -->
+		<!-- ============================================ -->
+
+		<section id="RPsbsr">
+			<div class="cs-container">
+				<picture class="cs-picture">
+					<!--Mobile Image-->
+					<source media="(max-width: 600px)" srcset="/gluten-free.webp" />
+					<!--Tablet and above Image-->
+					<source media="(min-width: 601px)" srcset="/gluten-free.webp" />
+					<img
+						loading="lazy"
+						decoding="async"
+						src="/gluten-free.webp"
+						alt="Gluten-Free Pastries"
+						width="586"
+						height="690"
+					/>
+				</picture>
+				<div class="cs-content">
+					<span class="cs-topper">Gluten Free Products</span>
+					<h2 class="cs-title">Delicious Gluten-Free Options for Every Taste</h2>
+					<ul class="cs-card-group">
+						<li class="cs-item">
+							<div class="wrapper">
+								<span class="cs-item-number">01</span>
+								<h3 class="cs-h3">Wide Variety</h3>
+							</div>
+							<p class="cs-item-text">						Explore our diverse range of gluten-free pastries, from classic favorites to innovative creations.</p>
+						</li>
+						<li class="cs-item">
+							<div class="wrapper">
+								<span class="cs-item-number">02</span>
+								<h3 class="cs-h3">High-Quality Ingredients</h3>
+							</div>
+							<p class="cs-item-text">We use only the finest, carefully selected ingredients to ensure the best taste and quality.</p>
+						</li>
+						<li class="cs-item">
+							<div class="wrapper">
+								<span class="cs-item-number">03</span>
+								<h3 class="cs-h3">Health-Conscious Choices</h3>
+							</div>
+							<p class="cs-item-text">						Indulge in our gluten-free treats without compromising on health or flavor.</p>
+						</li>
+						<li class="cs-item">
+							<div class="wrapper">
+								<span class="cs-item-number">04</span>
+								<h3 class="cs-h3">Special Orders</h3>
+							</div>
+							<p class="cs-item-text">						Customize your gluten-free pastries for any occasion, from birthdays to corporate events.</p>
+						</li>
+					</ul>
+					<a href="" class="cs-button-solid">View All Collections</a>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-1394">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Subscribe</span>
+            <h2 class="cs-title">Subscribe for Newsletter</h2>
+            <p class="cs-text">
+                Subscribe to our newsletter and stay up-to-date with the latest news, exclusive offers, and exciting updates.
+            </p>
+            <form class="cs-form" name="Contact Form" method="post">
+                <input class="cs-input" type="email" id="cs-email-1394" name="find-us" placeholder="Email Address">
+                <button class="cs-button-solid cs-submit" type="submit">Subscribe Now</button>
+            </form>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting10.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting10.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting10.jpg" alt="meeting" width="1920" height="486" aria-hidden="true">
+    </picture>
+</section>
+                                
+
+		<!-- ============================================ -->
+		<!--                   Footer                     -->
+		<!-- ============================================ -->
+
+		<footer id="cs-footer-1292">
+			<div class="cs-container">
+				<!-- Logo Group -->
+				<div class="cs-logo-group">
+					<a aria-label="go back to home" class="cs-logo" href="">
+						<img
+							class="cs-logo-img"
+							aria-hidden="true"
+							loading="lazy"
+							decoding="async"
+							src="/noisette-logo.png"
+							alt="logo"
+							width="240"
+							height="32"
+						/>
+					</a>
+					<p class="cs-text">Savor the artistry where every dish is a culinary masterpiece</p>
+					<a href="mailto:info@mail.com" class="cs-link">
+						<img
+							class="cs-link-icon"
+							aria-hidden="true"
+							loading="lazy"
+							decoding="async"
+							src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/construction-mail.svg"
+							alt="icon"
+							width="24"
+							height="24"
+						/>
+						hi@noisette-bakehouse.com
+					</a>
+				</div>
+				<!-- Links -->
+				<ul class="cs-nav">
+					<li class="cs-nav-li">
+						<span class="cs-header">Services</span>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">3D Cakes</a>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">Wholesale</a>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">Events</a>
+					</li>
+				</ul>
+				<ul class="cs-nav">
+					<li class="cs-nav-li">
+						<span class="cs-header">About</span>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">Our Story</a>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">Chefs</a>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">Career</a>
+					</li>
+				</ul>
+				<ul class="cs-nav">
+					<li class="cs-nav-li">
+						<span class="cs-header">Contact</span>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">Facebook</a>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">Instagram</a>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">LinkedIn</a>
+					</li>
+				</ul>
+				<ul class="cs-nav">
+					<li class="cs-nav-li">
+						<span class="cs-header">Help</span>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">FAQ</a>
+					</li>
+					<li class="cs-nav-li">
+						<a class="cs-nav-link" href="">Contact us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cs-bottom">
+				<span class="cs-copyright"
+					>Copyright© 2023.
+					<a class="cs-copyright-link" href="">Noisette Bakehouse.</a>
+					All Right Reserved.
+				</span>
+				<a href="" class="cs-copyright-link">Terms of Service</a>
+				<a href="" class="cs-copyright-link">Privacy Policy</a>
+			</div>
+			<!--Floating Cirlces-->
+			<div class="cs-floater" aria-hidden="true"></div>
+		</footer>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
